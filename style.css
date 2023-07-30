@@ -1,0 +1,65 @@
+body{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: aquamarine;
+}
+
+div{
+	display: flex;
+}
+
+.calculator{
+	background-color: rgb(189, 236, 201);
+	padding: 10px;
+	height: 500px;
+	width: 400px;
+	flex-direction: column;
+	border: 2px solid black;
+	border-radius: 20px;
+	box-shadow: 5px 5px 15px;
+	margin-top: 80px;
+}
+
+.display{
+	margin: 50px 15px 50px 15px;
+	background-color: rgb(255, 185, 127);
+	padding: 5px 20px;
+}
+
+.display p{
+	font-size: 20px;
+	font-weight: 700;
+	text-align: end;
+	flex: 1;
+}
+
+.numPad{
+	flex-direction: column;
+	padding: 20px;
+}
+
+button{
+	flex: 1;
+	height: 50px;
+	margin: 3px 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: rgb(153, 255, 255);
+}
+
+button:hover{
+	border-width: 1px;
+	box-shadow: 0 0 10px rgb(77, 77, 77);
+}
+
+button:active{
+	background-color: rgb(118, 171, 171);
+	transform: translateY(3px);
+}
+
+button.disabled{
+	background-color: rgb(118, 171, 171);
+}
