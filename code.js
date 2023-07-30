@@ -129,7 +129,7 @@ function multiply(a,b) {
 
 function divide(a,b) {
 	if (b === "0"){
-		prompt("u can't >:(");
+		alert("u can't >:(");
 		inputClear();
 		return;
 	}
