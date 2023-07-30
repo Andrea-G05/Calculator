@@ -51,6 +51,10 @@ button{
 	font-size: larger;
 }
 
+button.operator{
+	background-color: rgb(115, 166, 255);
+}
+
 button:hover{
 	border-width: 1px;
 	box-shadow: 0 0 10px rgb(77, 77, 77);
