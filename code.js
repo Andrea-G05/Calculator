@@ -128,6 +128,11 @@ function multiply(a,b) {
 }
 
 function divide(a,b) {
+	if (b === "0"){
+		prompt("u can't >:(");
+		inputClear();
+		return;
+	}
 	let result = +a / +b;
 	return result.toString();
 }
