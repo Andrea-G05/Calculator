@@ -30,7 +30,7 @@ div{
 }
 
 .display p{
-	font-size: 20px;
+	font-size: x-large;
 	font-weight: 700;
 	text-align: end;
 	flex: 1;
@@ -48,6 +48,7 @@ button{
 	border: 1px solid black;
 	border-radius: 5px;
 	background-color: rgb(153, 255, 255);
+	font-size: larger;
 }
 
 button:hover{
