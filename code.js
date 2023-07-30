@@ -10,8 +10,10 @@ document.querySelectorAll("button").forEach( (button)=>
 function elaborate (input) {
 	if (input.match(/[0-9]/))
 		inputNumber(input)
+
 	else if (input.match(/[\+\-\x\/]/))
 		inputOperator(input)
+
 	else switch(input){
 		case "=":
 			inputEqual();
@@ -36,11 +38,13 @@ function inputNumber(input) {
 		num1 === "0"?
 		num1 = input:
 		num1 += input;
+
 		display.textContent = num1;
 	} else {
 		num2 === "0"?
 		num2 = input:
 		num2 += input;
+
 		display.textContent = num2;
 	}
 }
@@ -57,7 +61,9 @@ function inputOperator(input) {
 function inputEqual() {
 	if (oper === undefined)
 		return;
+
 	let result;
+
 	switch (oper){
 		case "+":
 			result = add(num1, num2);
@@ -72,10 +78,12 @@ function inputEqual() {
 			result = divide(num1, num2);
 			break;
 	}
+
 	display.textContent = result;
 	num1 = "0";
 	num2 = "0";
 	oper = undefined;
+
 	return result;
 }
 
@@ -91,7 +99,17 @@ function inputDot() {
 }
 
 function inputSign() {
-	console.log("sign")
+	if (oper === undefined){
+		num1 = +num1 * -1;
+		num1 = num1.toString()
+
+		display.textContent = num1;
+	} else {
+		num2 = +num2 * -1;
+		num2 = num2.toString()
+
+		display.textContent = num2;
+	}
 }
 
 function add(a,b) {
